@@ -1,15 +1,17 @@
 (() => {
+  //the regexp
+  const regexp = /H:mm a|aK:mm/
   //define handlers visible in the page scope and export handler functions into them
-  let webpackJsonpHandler = new window.Object();
-  let pushHandler = new window.Object();
-  let KQqjHandler = new window.Object();
-  let ModuleHandler = new window.Object();
-  let ExportsHandler = new window.Object();
-  let FormatterHandler = new window.Object();
+  const webpackJsonpHandler = new window.Object();
+  const pushHandler = new window.Object();
+  const KQqjHandler = new window.Object();
+  const ModuleHandler = new window.Object();
+  const ExportsHandler = new window.Object();
+  const FormatterHandler = new window.Object();
 
   exportFunction(
     (target, thisArg, args) => {
-      args[1].pattern = args[1].pattern.replace("h:mm a", "HH:mm"); //change "11:00 PM" to "23:00" and "12:00 AM" to "00:00"
+      args[1].pattern = args[1].pattern.replace(regexp, "HH:mm"); //change "11:00 PM" to "23:00" and "12:00 AM" to "00:00"
       return Reflect.apply(target, thisArg, args);
     },
     FormatterHandler,

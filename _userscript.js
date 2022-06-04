@@ -45,7 +45,7 @@
   function TrapPush(push) {
     return new Proxy(push, {
       apply(target, thisArg, args) {
-        if (args[0][0][0] === 2) {
+        if (args[0][1].KQqj) {
           console.log("trapped KQqj");
           args[0][1].KQqj = TrapKQqj(args[0][1].KQqj);
         }
