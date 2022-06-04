@@ -1,6 +1,6 @@
 (() => {
   //the regexp
-  const regexp = /H:mm a|aK:mm/
+  const regexp = /h:mm a|a[Kh]:mm/
   //define handlers visible in the page scope and export handler functions into them
   const webpackJsonpHandler = new window.Object();
   const pushHandler = new window.Object();

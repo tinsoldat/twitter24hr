@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Twitter 24 hour-clock",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "24-hour clock format for Twitter.",
   "content_security_policy": "default-src 'self'",
   "content_scripts": [
