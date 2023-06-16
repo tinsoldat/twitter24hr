@@ -1,4 +1,4 @@
-# twitter24hr
+# twitter24hr(BROKEN)
 A simple [Firefox addon](https://addons.mozilla.org/en-US/firefox/addon/twitter-24-hour-clock/) that makes Twitter.com show time in the 24-hour clock format.
 
 Example:<br/>
